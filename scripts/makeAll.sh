@@ -1,0 +1,9 @@
+./makePage.sh ../svg/Page1.svg 1
+./makePage.sh ../svg/Page2.svg 2
+./makePage.sh ../svg/Page3.svg 3
+./makePage.sh ../svg/Page4.svg 4
+./makePage.sh ../svg/Page5.svg 5
+./makePage.sh ../svg/Page6.svg 6
+./makePage.sh ../svg/Page7.svg 7
+./makePage.sh ../svg/Page8.svg 8
+./makePage.sh ../svg/Page9.svg 9

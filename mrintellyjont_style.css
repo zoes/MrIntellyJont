@@ -1,0 +1,546 @@
+/* CSS Resets */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+
+html, body {
+    height: 100%;
+}
+body {
+    font-family: Arial, "MS Trebuchet", sans-serif;
+}
+div#wrapper {
+    background-color: #dfebfa;
+    width: 100%;
+    height: 100%;
+    max-width: 1140px;
+    min-height: 100%;
+    height: auto !important;
+    margin-bottom: -100px;
+    width:100%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left:auto;
+}
+
+div#content {
+    min-height: 100%;
+    width: 90%;
+}
+div#wordcontainer {
+}
+div#picturecontainer {
+    padding-top:40px;
+}
+section#words {
+    margin: 30px;
+    text-align: center;
+}
+canvas#mrintellyjont {
+}
+section#words p {
+    font-family: "GoodDogRegular";
+    font-size: 200%;
+    line-height: 100%;
+    padding-bottom: 20px;
+}
+section#words a.next{
+    float: right;
+    line-height: 100%;
+    padding-bottom:0;
+}
+section#words a.last{
+    float: left;
+    line-height: 100%;
+    padding-bottom:0;
+}
+div#colpicker {
+    width: 100%;
+    overflow: auto;
+    padding-bottom:20px;
+}
+a {
+    color: black;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+p, li {
+    line-height: 20px;
+}
+
+h2 {
+    padding: 10px 0 10px;
+}
+
+header#page_header {
+    background-color: #b0ac9a;
+     width: 100%;
+}
+
+header#page_header h1 {
+    font-family: "SlingNormal";
+    font-size: 300%;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    margin-left: 7.6%;
+}
+div#author h2 {
+    font-family: "SlingNormal";
+    font-size: 200%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    margin-right: 7.6%;
+}
+
+footer#page_footer nav ul li {
+    margin: 0 10px 0 10px;
+    display: inline;
+}
+
+section#posts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    float: left;
+    padding-left: 0;
+}
+
+div#colorpicker {
+    background-color: #d1e2ff;
+    width: 140px;
+    font-size: 80%;
+    padding-top:10px;
+    padding-bottom:10px;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+div#colorpicker ul {
+    padding: 0;
+}
+div#colorpicker ul li {
+    margin: 10px 10px 10px 10px;
+    list-style: none;
+}
+div#colorpicker input {
+    vertical-align:bottom;
+    width:50px;
+}
+div#colorpicker input.text {
+    vertical-align:bottom;
+    width: 100px;
+}
+div#colorpicker label {
+    width:90px;
+   float:left; 
+}
+div#colorpicker label.sitetitle {
+    width:40px;
+}
+div#colorpicker h2 {
+    padding-left: 10px;
+    font-style: italic;
+    }
+
+.button {
+    /* Submit button style */
+    text-align: center;
+    width: 100px;
+    color: #fff;
+    text-shadow: #000 1px 1px;
+    border-top: 1px solid #b3d841;
+    margin-top: 10px;
+
+    /*** Adding CSS3 Gradients ***/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b3d841), to(#6f8c15));
+    background:  -moz-linear-gradient(19% 75% 90deg,#6f8c15, #b3d841);
+}
+
+
+section#sidebar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    float: right;
+}
+
+section#sidebar ul li {
+    list-style: none;
+    padding-left: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+section#sidebar input.text {
+    width: 20px;
+}
+section#sidebar input {
+    width: 70px;
+}
+section#sidebar .clearbutton {
+    text-align: center;
+    width: 100px;
+    color: #fff;
+    text-shadow: #000 1px 1px;
+    border-top: 1px solid #b3d841;
+    margin-top: 10px;
+
+    /*** Adding CSS3 Gradients ***/
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e10000), to(#870707));
+    background:  -moz-linear-gradient(19% 75% 90deg,#870707, #e10000);
+}
+
+footer#page_footer {
+    background-color: #b0ac9a;
+    max-width: 1140px;
+    position:relative;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+footer#page_footer  p {
+    padding-top: 20px;
+}
+.footer, .push {
+    clear: both;
+    height: 100px;
+}
+/* simple colour picker */
+
+div.colorPicker-picker {
+  height: 16px;
+  width: 16px;
+  padding: 0 !important;
+  border: 1px solid #ccc;
+  background: url(js/arrow.gif) no-repeat top right;
+  cursor: pointer;
+  line-height: 16px;
+  float:right;
+}
+
+div.colorPicker-palette {
+  width: 110px;
+  position: absolute;
+  border: 1px solid #598FEF;
+  background-color: #EFEFEF;
+  padding: 2px;
+}
+  div.colorPicker_hexWrap {width: 100%; float:left }
+  div.colorPicker_hexWrap label {font-size: 95%; color: #2F2F2F; margin: 5px 2px; width: 25%}
+  div.colorPicker_hexWrap input {margin: 5px 2px; padding: 0; font-size: 95%; border: 1px solid #000; width: 65%; }
+
+div.colorPicker-swatch {
+  height: 12px;
+  width: 12px;
+  border: 1px solid #000;
+  margin: 2px;
+  float: left;
+  cursor: pointer;
+  line-height: 12px;
+}
+
+/* Additional fonts */
+
+@font-face {
+    font-family: 'MerriweatherRegular';
+    src: url('fonts/Merriweather-webfont.eot');
+    src: url('fonts/Merriweather-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Merriweather-webfont.woff') format('woff'),
+         url('fonts/Merriweather-webfont.ttf') format('truetype'),
+         url('fonts/Merriweather-webfont.svg#MerriweatherRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'AnagramRegular';
+    src: url('fonts/Anagram-webfont.eot');
+    src: url('fonts/Anagram-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Anagram-webfont.woff') format('woff'),
+         url('fonts/Anagram-webfont.ttf') format('truetype'),
+         url('fonts/Anagram-webfont.svg#AnagramRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'AnonymousRegular';
+    src: url('fonts/Anonymous-webfont.eot');
+    src: url('fonts/Anonymous-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Anonymous-webfont.woff') format('woff'),
+         url('fonts/Anonymous-webfont.ttf') format('truetype'),
+         url('fonts/Anonymous-webfont.svg#AnonymousRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'BonvenoCFLight';
+    src: url('fonts/BonvenoCF-Light-webfont.eot');
+    src: url('fonts/BonvenoCF-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BonvenoCF-Light-webfont.woff') format('woff'),
+         url('fonts/BonvenoCF-Light-webfont.ttf') format('truetype'),
+         url('fonts/BonvenoCF-Light-webfont.svg#BonvenoCFLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'CloisterBlackLight';
+    src: url('fonts/CloisterBlack-webfont.eot');
+    src: url('fonts/CloisterBlack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CloisterBlack-webfont.woff') format('woff'),
+         url('fonts/CloisterBlack-webfont.ttf') format('truetype'),
+         url('fonts/CloisterBlack-webfont.svg#CloisterBlackLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'GreyscaleBasicRegular';
+    src: url('fonts/Greyscale_Basic_Regular-webfont.eot');
+    src: url('fonts/Greyscale_Basic_Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Greyscale_Basic_Regular-webfont.woff') format('woff'),
+         url('fonts/Greyscale_Basic_Regular-webfont.ttf') format('truetype'),
+         url('fonts/Greyscale_Basic_Regular-webfont.svg#GreyscaleBasicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'HillHouseMedium';
+    src: url('fonts/Hill_House-webfont.eot');
+    src: url('fonts/Hill_House-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Hill_House-webfont.woff') format('woff'),
+         url('fonts/Hill_House-webfont.ttf') format('truetype'),
+         url('fonts/Hill_House-webfont.svg#HillHouseMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'InconsolataMedium';
+    src: url('fonts/Inconsolata-webfont.eot');
+    src: url('fonts/Inconsolata-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Inconsolata-webfont.woff') format('woff'),
+         url('fonts/Inconsolata-webfont.ttf') format('truetype'),
+         url('fonts/Inconsolata-webfont.svg#InconsolataMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'MarketingScriptRegular';
+    src: url('fonts/MarketingScript-webfont.eot');
+    src: url('fonts/MarketingScript-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/MarketingScript-webfont.woff') format('woff'),
+         url('fonts/MarketingScript-webfont.ttf') format('truetype'),
+         url('fonts/MarketingScript-webfont.svg#MarketingScriptRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'RomanCapsRegular';
+    src: url('fonts/Roman_SD-webfont.eot');
+    src: url('fonts/Roman_SD-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Roman_SD-webfont.woff') format('woff'),
+         url('fonts/Roman_SD-webfont.ttf') format('truetype'),
+         url('fonts/Roman_SD-webfont.svg#RomanCapsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'SFWonderComicRegular';
+    src: url('fonts/SF_Wonder_Comic-webfont.eot');
+    src: url('fonts/SF_Wonder_Comic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/SF_Wonder_Comic-webfont.woff') format('woff'),
+         url('fonts/SF_Wonder_Comic-webfont.ttf') format('truetype'),
+         url('fonts/SF_Wonder_Comic-webfont.svg#SFWonderComicRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'SlingNormal';
+    src: url('fonts/Sling-webfont.eot');
+    src: url('fonts/Sling-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Sling-webfont.woff') format('woff'),
+         url('fonts/Sling-webfont.ttf') format('truetype'),
+         url('fonts/Sling-webfont.svg#SlingNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'WCROUGHTRADBtaRegular';
+    src: url('fonts/WC_RoughTrad-webfont.eot');
+    src: url('fonts/WC_RoughTrad-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/WC_RoughTrad-webfont.woff') format('woff'),
+         url('fonts/WC_RoughTrad-webfont.ttf') format('truetype'),
+         url('fonts/WC_RoughTrad-webfont.svg#WCROUGHTRADBtaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'GoodDogRegular';
+    src: url('fonts/GoodDog-webfont.eot');
+    src: url('fonts/GoodDog-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/GoodDog-webfont.woff') format('woff'),
+         url('fonts/GoodDog-webfont.ttf') format('truetype'),
+         url('fonts/GoodDog-webfont.svg#GoodDogRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* 1140 section */
+
+.container {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+.row {
+width: 100%;
+max-width: 1140px;
+min-width: 230px;
+margin: 0 auto;
+overflow: hidden;
+}
+
+.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+margin-right: 3.8%;
+float: left;
+min-height: 1px;
+}
+
+.row .onecol {
+width: 4.85%;
+}
+
+.row .twocol {
+width: 13.45%;
+}
+
+.row .threecol {
+width: 22.05%;
+}
+
+.row .fourcol {
+width: 30.75%;
+}
+
+.row .fivecol {
+width: 39.45%;
+}
+
+.row .sixcol {
+width: 48%;
+}
+
+.row .sevencol {
+width: 56.75%;
+}
+
+.row .eightcol {
+width: 65.4%;
+}
+
+.row .ninecol {
+width: 74.05%;
+}
+
+.row .tencol {
+width: 82.7%;
+}
+
+.row .elevencol {
+width: 91.35%;
+}
+
+.row .twelvecol {
+width: 100%;
+float: left;
+}
+
+.last {
+margin-right: 0px;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+
+@media only screen and (max-width: 1023px) {
+
+	body {
+	font-size: 0.8em;
+	line-height: 1.5em;
+	}
+	
+	}
+
+
+/* Mobile */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+	-webkit-text-size-adjust: none;
+	}
+	
+	.row, body, .container {
+	width: 100%;
+	min-width: 0;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+	
+	.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	}
+    canvas#mrintellyjont {
+        float: none;
+        padding-left: 20%;
+        text-align: center;
+    }
+    div#author h2 {
+        text-align: center;
+    margin: 0;
+    }
+    header#page_header h1 {
+    text-align: center;
+    margin: 0;
+    }
+    section#sidebar {
+      padding-left: 10%;
+      float: none;
+    }
+}
+@media handheld, only screen and (max-width: 767px) and (orientation: portrait) {
+     canvas#mrintellyjont {
+        padding-left: 0;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+        <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+        <script type="text/javascript" src="js/jquery-1.7.js"> </script>
+        <script type="text/javascript" src="js/pChoice.js"> </script>
+        <script type="text/javascript" src="js/popup.js"></script> 
+        <script type="text/javascript" src="js/jquery.colorPicker.js"></script> 
+        <script type="text/javascript" src="js/Picture9.js"></script>
+ 
+        <script type="text/javascript">
+
+           $(function(){
+               var canvas = document.getElementById('mrintellyjont');
+               if (canvas.getContext){
+                   drawPicture(canvas, "#808000", "#ffff00", "#bdb76b", "#d3d3d3");
+;
+               }
+           });
+
+
+        </script>
+
+                <script type="text/javascript">
+           $(function() {
+                $(document).ready(function (){
+                        var sc = document.getElementById('grass_color');
+                        sc.value = sc.defaultValue;
+                        $(sc).colorPicker();
+                        var lc = document.getElementById('sun_color');
+                        lc.value = lc.defaultValue;
+                        $(lc).colorPicker();
+                        var fc = document.getElementById('background_color');
+                        fc.value = fc.defaultValue;
+                        $(fc).colorPicker();
+                        var hc = document.getElementById('stone_color');
+                        hc.value = hc.defaultValue;
+                        $(hc).colorPicker();
+                });
+           });
+        </script>
+
+
+        <link rel="stylesheet" href="mrintellyjont_style.css" type="text/css">
+
+        <title>Mr Intely Jont</title>
+    </head>
+
+    <body>
+    <div id="wrapper">
+        <header id="page_header" class="row">
+           <div id="title" class="eightcol">
+                <h1>Mr Intely Jont</h1>
+           </div><!--title-->
+           <div id="author" class="fourcol last">
+                <h2> by Alice Bartlett </h2>
+           </div><!--logo-->
+        </header>
+        <div id="content" class="row">
+            <div id="wordcontainer" class="fourcol">
+            <section id="words">
+                <arcticle>
+                    <p>Mr Intely Jont died in 1998.</p>
+
+                    <a class="next" href="page1.html"><img src="js/forward.png"></a>
+<a class="last" href="page8.html"><img src="js/backward.png"></a>
+
+                </article>
+           </section>
+           </div>
+          <div id="picturecontainer" class="fivecol">
+           <section id="pictures">
+                    <canvas id="mrintellyjont" width="300" height="300">
+                        <h1>Picture9</h1>
+ 
+                    </canvas>
+            </section>
+            </div>
+        <section id="sidebar" class="threecol last"> 
+                <div id="colorpicker">
+                <ul>
+                    <li>
+                      <label for="grass_color">Grass colour</label>
+<input class="color" name="grass_color" id="grass_color" value="808000">
+<label for="sun_color">Sun colour</label>
+<input class="color" name="sun_color" id="sun_color" value="ffff00">
+<label for="background_color">Background</label>
+<input class="color" name="background_color" id="background_color" value="bdb76b">
+<label for="stone_color">Stone colour</label>
+<input class="color" name="stone_color" id="stone_color" value="d3d3d3">
+
+                      <input type="submit" class="button" value="CHANGE" onclick="picture_colors();"
+
+
+                    </li> 
+                    <li>
+                        <label for="schemeID">Scheme ID</label> 
+                        <input class="text" name="schemeID" id="schemeID" value="">
+                        <input type="submit" class="button" value="SAVE" onclick="saveColorScheme();"
+                    </li>
+                    <li>
+                        <label for="restoreID">Restore ID</label> 
+                        <input class="text" name="restoreID" id="restoreID" value="">
+                        <input type="submit" class="button" value="RESTORE" onclick="restoreColorScheme();"
+                    </li>
+                    <li>
+                        <input type="submit" class="clearbutton" value="DELETE ALL" onclick="clearColorSchemes();"
+                    </li>
+                </ul>
+                </div>
+
+        </section>
+
+        </div> <!--END: content-->
+
+        <div class="push"> </div> <!--Sticky footer fix -->
+
+        </div> <!--END: wrapper -->
+
+        <footer id="page_footer" class="footer">
+            <p>&copy; <a href="http://zoah.co.uk">ZOAH</a></p>
+        </footer>
+    </body>
+</html>

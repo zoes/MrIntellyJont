@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+        <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+        <script type="text/javascript" src="js/jquery-1.7.js"> </script>
+        <script type="text/javascript" src="js/pChoice.js"> </script>
+        <script type="text/javascript" src="js/popup.js"></script> 
+        <script type="text/javascript" src="js/jquery.colorPicker.js"></script> 
+        {{picturefile}} 
+        <script type="text/javascript">
+
+           $(function(){
+               var canvas = document.getElementById('mrintellyjont');
+               if (canvas.getContext){
+                   {{functioncall}};
+               }
+           });
+
+
+        </script>
+
+        {{initialisecolor}}
+
+        <link rel="stylesheet" href="mrintellyjont_style.css" type="text/css">
+
+        <title>Mr Intely Jont</title>
+    </head>
+
+    <body>
+    <div id="wrapper">
+        <header id="page_header" class="row">
+           <div id="title" class="eightcol">
+                <h1>Mr Intely Jont</h1>
+           </div><!--title-->
+           <div id="author" class="fourcol last">
+                <h2> by Alice Bartlett </h2>
+           </div><!--logo-->
+        </header>
+        <div id="content" class="row">
+            <div id="wordcontainer" class="fourcol">
+            <section id="words">
+                <arcticle>
+                    {{words}}
+                    {{navigation}}
+                </article>
+           </section>
+           </div>
+          <div id="picturecontainer" class="fivecol">
+           <section id="pictures">
+                    <canvas id="mrintellyjont" width="300" height="300">
+                        {{canvasheading}} 
+                    </canvas>
+            </section>
+            </div>
+        <section id="sidebar" class="threecol last"> 
+                <div id="colorpicker">
+                <ul>
+                    <li>
+                      {{colorselect}}
+                      <input type="submit" class="button" value="CHANGE" onclick="picture_colors();"
+
+
+                    </li> 
+                    <li>
+                        <label for="schemeID">Scheme ID</label> 
+                        <input class="text" name="schemeID" id="schemeID" value="">
+                        <input type="submit" class="button" value="SAVE" onclick="saveColorScheme();"
+                    </li>
+                    <li>
+                        <label for="restoreID">Restore ID</label> 
+                        <input class="text" name="restoreID" id="restoreID" value="">
+                        <input type="submit" class="button" value="RESTORE" onclick="restoreColorScheme();"
+                    </li>
+                    <li>
+                        <input type="submit" class="clearbutton" value="DELETE ALL" onclick="clearColorSchemes();"
+                    </li>
+                </ul>
+                </div>
+
+        </section>
+
+        </div> <!--END: content-->
+
+        <div class="push"> </div> <!--Sticky footer fix -->
+
+        </div> <!--END: wrapper -->
+
+        <footer id="page_footer" class="footer">
+            <p>&copy; <a href="http://zoah.co.uk">ZOAH</a></p>
+        </footer>
+    </body>
+</html>
