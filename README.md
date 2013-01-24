@@ -1,4 +1,4 @@
 MrIntellyJont
 =============
 
-Messing about with HTML5
+Creating an 'app' using HTML5 features. 
